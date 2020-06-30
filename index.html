@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Monopoly</title>
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body onresize="">
+  <div class="container" id="all">
+    <div class="field">
+      <div class="left__field">
+        <div class="players">
+          <h1 class="title">Гравці</h1>
+          <div class="players-overflow">
+            <div class="user_block">
+              <img src="img/user_img_1.svg" alt="" class="avatar red-border">
+              <div class="text">
+                <div class="name">Theresa Webb</div>
+                <div class="cash">$26 700</div>
+                <div class="property">Власність: <span class="number">15</span> одиниць</div>
+              </div>
+            </div>
+            <div class="user_block active-player">
+              <span class="active"></span>
+              <img src="img/user_img_2.svg" alt="" class="avatar yellow-border">
+              <div class="text">
+                <div class="name">Shane Nguyen</div>
+                <div class="cash">$19 900</div>
+                <div class="property">Власність: <span class="number">7</span> одиниць</div>
+              </div>
+            </div>
+            <div class="user_block">
+              <img src="img/user_img_3.svg" alt="" class="avatar blue-border">
+              <div class="text">
+                <div class="name">Arlene Steward</div>
+                <div class="cash">$25 300</div>
+                <div class="property">Власність: <span class="number">17</span> одиниць</div>
+              </div>
+            </div>
+            <div class="user_block">
+              <img src="img/user_img_4.svg" alt="" class="avatar green-border">
+              <div class="text">
+                <div class="name">Jenny Wilson</div>
+                <div class="cash">$15 500</div>
+                <div class="property">Власність: <span class="number">15</span> одиниць</div>
+              </div>
+            </div>
+            <div class="user_block">
+              <img src="img/user_img_1.svg" alt="" class="avatar red-border">
+              <div class="text">
+                <div class="name">Theresa Webb</div>
+                <div class="cash">$26 700</div>
+                <div class="property">Власність: <span class="number">15</span> одиниць</div>
+              </div>
+            </div>
+            <div class="user_block">
+              <img src="img/user_img_2.svg" alt="" class="avatar yellow-border">
+              <div class="text">
+                <div class="name">Shane Nguyen</div>
+                <div class="cash">$19 900</div>
+                <div class="property">Власність: <span class="number">7</span> одиниць</div>
+              </div>
+            </div>
+            <div class="user_block">
+              <img src="img/user_img_3.svg" alt="" class="avatar blue-border">
+              <div class="text">
+                <div class="name">Arlene Steward</div>
+                <div class="cash">$25 300</div>
+                <div class="property">Власність: <span class="number">17</span> одиниць</div>
+              </div>
+            </div>
+            <div class="user_block">
+              <img src="img/user_img_4.svg" alt="" class="avatar green-border">
+              <div class="text">
+                <div class="name">Jenny Wilson</div>
+                <div class="cash">$15 500</div>
+                <div class="property">Власність: <span class="number">15</span> одиниць</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="employees">
+          <h1 class="header">Мої працівники</h1>
+          <div class="employees-overflow">
+            <div class="cards_section">
+              <div class="card titushki">
+                <h2 class="title">Тітушки</h2>
+                <h3 class="subtitle">Можуть спробувати щось віджати</h3>
+                <img class="img" src="img/titushki.svg" alt="Тітушки">
+              </div>
+              <div class="card bulls">
+                <h2 class="title">Бики з району</h2>
+                <h3 class="subtitle">Захистять вас від нападу</h3>
+                <img src="img/bulls.svg" alt="Бики з району">
+              </div>
+              <div class="card titushki">
+                <h2 class="title">Тітушки</h2>
+                <h3 class="subtitle">Можуть спробувати щось віджати</h3>
+                <img class="img" src="img/titushki.svg" alt="Тітушки">
+              </div>
+              <div class="card bulls">
+                <h2 class="title">Бики з району</h2>
+                <h3 class="subtitle">Захистять вас від нападу</h3>
+                <img src="img/bulls.svg" alt="Бики з району">
+              </div>
+            </div>
+            <div class="cards_section">
+
+            </div>
+          </div>
+        </div>
+        <!-- /.employees -->
+      </div>
+      <!-- /.left__field -->
+
+      <div class="center__field">
+        <div class="cells">
+          <div class="row-top">
+            <div class="cell-start square-case">
+
+              <img class="svg" src="icons/start.svg" alt="">
+            </div>
+            <!-- /.cell-start -->
+
+            <div class="cell-box horizontal-case">
+              <h2 class="header">$25 000</h2>
+              <h3 class="title">Полтавський клуб боксу “Джеб”</h3>
+              <img class="svg" src="icons/boxing.svg" alt="">
+              <div class="footer"></div>
+            </div>
+            <!-- /.cell-box -->
+
+            <div class="cell-soccer horizontal-case">
+              <span class="case-active green"></span>
+              <h2 class="header">$27 000</h2>
+              <h3 class="title">Фубольний клуб “Лев”</h3>
+              <img class="svg" src="icons/soccer.svg" alt="">
+              <div class="footer"></div>
+            </div>
+            <!-- /.cell-soccer -->
+
+            <div class="cell-plant horizontal-case">
+              <h2 class="header">$22 000</h2>
+              <h3 class="title">Закарпатський АвтоЗавод</h3>
+              <img class="svg" src="icons/factory.svg" alt="">
+              <div class="footer"></div>
+            </div>
+            <!-- /.cell-plant -->
+
+            <div class="cell-question horizontal-case">
+              <span>?</span>
+            </div>
+            <!-- /.cell-question -->
+
+            <div class="cell-ea horizontal-case">
+              <h2 class="header">$10 000</h2>
+              <h3 class="title">Житоморський ЕнергоАтом</h3>
+              <img class="svg" src="icons/building-27.svg" alt="">
+              <div class="footer"></div>
+            </div>
+            <!-- /.cell-ea -->
+
+            <div class="cell-hotel horizontal-case">
+              <h2 class="header">$20 000</h2>
+              <h3 class="title">Одеський приморський готель</h3>
+              <img class="svg" src="icons/building-21.svg" alt="">
+              <div class="footer"></div>
+            </div>
+            <!-- /.cell-hotel -->
+
+            <div class="cell-chug horizontal-case">
+              <h2 class="header">$15 000</h2>
+              <h3 class="title">Чугуєвський фанерний завод</h3>
+              <img class="svg" src="icons/building-11.svg" alt="">
+              <div class="footer"></div>
+            </div>
+            <!-- /.cell-chug -->
+
+            <div class="cell-question horizontal-case">
+              <span>?</span>
+            </div>
+            <!-- /.cell-question -->
+
+            <div class="cell-police square-case">
+              <span class="case-active blue first"></span>
+              <span class="case-active red second"></span>
+              <span class="case-active yellow third"></span>
+              <span class="case-active green fourth"></span>
+              <img class="svg" src="icons/police-5.svg" alt="">
+            </div>
+            <!-- /.cell-police -->
+
+          </div>
+          <!-- /.row-top -->
+
+          <div class="row-center">
+            <div class="column">
+
+              <div class="cell-bascket vertical-case">
+                <h2 class="header">$10 000</h2>
+                <h3 class="title">Дніпропетровський баскетбольний клуб</h3>
+                <img class="svg" class="svg" src="icons/basketball.svg" alt="">
+
+                <div class="footer"></div>
+              </div>
+              <!-- /.cell-bascket -->
+
+              <div class="cell-question vertical-case">
+                <span>?</span>
+              </div>
+              <!-- /.cell-question -->
+
+              <div class="cell-electro vertical-case">
+                <span class="case-active red"></span>
+                <h2 class="header">$17 000</h2>
+                <h3 class="title">Луцька мережа електрозаправок</h3>
+                <img class="svg" src="icons/car-5.svg" alt="">
+                <div class="footer"></div>
+              </div>
+              <!-- /.cell-electro -->
+
+              <div class="cell-parking vertical-case">
+                <span class="case-active yellow"></span>
+                <h2 class="header">$12 000</h2>
+                <h3 class="title">Запорізький міський паркінг</h3>
+                <img class="svg" src="icons/car-22.svg" alt="">
+                <div class="footer"></div>
+              </div>
+              <!-- /.cell-parking -->
+
+              <div class="cell-sto vertical-case">
+                <span class="case-active blue first"></span>
+                <span class="case-active red second"></span>
+                <span class="case-active yellow third"></span>
+                <span class="case-active green fourth"></span>
+                <h2 class="header">$10 000</h2>
+                <h3 class="title">Волинська станція техобслуговування</h3>
+                <img class="svg" src="icons/car-19.svg" alt="">
+                <div class="footer"></div>
+              </div>
+              <!-- /.cell-sto -->
+
+            </div>
+            <!-- /.column -->
+
+            <div class="column">
+              <div class="action-screen ">
+
+                <div class="action">
+                  <h1 class="title">Ваш Хід</h1>
+                  <img class="first" src="img/cubes.svg" alt="">
+                  <div class="button-pack">
+                    <button class="btn_red btn-small btn btn-reidsa">Рейдувати</button>
+                    <button class="btn_orange btn-small btn ">Переговори</button>
+                  </div>
+                  <button class="btn_green btn-big btn ">Йди далі</button>
+                </div>
+                <!-- /.action -->
+
+                <div class="talks ">
+                  <h1 class="title">Переговори</h1>
+                  <div class="subitle">Оберіть гравця, з яким хочете переговорити</div>
+                  <!-- /.subitle -->
+                  <div class="avatar_block">
+                    <img src="img/user_img_1.svg" alt="" class="message-avatar red-border left">
+                    <img src="img/user_img_2.svg" alt="" class="message-avatar yellow-border top">
+                    <img src="img/user_img_3.svg" alt="" class="message-avatar blue-border right">
+                    <img src="img/user_img_4.svg" alt="" class="message-avatar green-border bottom">
+                  </div>
+                  <!-- /.avatar_block -->
+                  <button class="btn_white btn-talks btn btn-request">Гравець отримає Ваш запит та надасть
+                    відповідь</button>
+                </div>
+                <!-- /.talks -->
+
+                <div class="talks-2">
+                  <h1 class="title">Переговори</h1>
+                  <div class="row avatar_block">
+
+                    <img src="img/user_img_3.svg" alt="" class="message-avatar blue-border block">
+                    <img src="img/user_img_4.svg" alt="" class="message-avatar green-border block">
+
+                    <!-- /.avatar_block -->
+                    <div class="text-block block">
+                      <h1 class="title">Jenny Wilson</h1>
+                      <div class="money">$15 500</div>
+                      <div class="own">Власність: <span>15</span> одиниць</div>
+                    </div>
+                    <!-- /.text-block -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row">
+                    <div class="img-block">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                    </div>
+                    <!-- /.img-block -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row-bottom">
+                    <div class="column left-column">
+                      <div class="title-money">Гроші:</div>
+                      <input type="text" name="money" placeholder="$0.00" value="$10 000">
+                      <div class="title-capital">Майно:</div>
+                      <div class="card"><img src="img/card-empty.png" alt=""></div>
+                    </div>
+                    <!-- /.column -->
+                    <div class="column center-column">
+                      <img src="/img/arrow-blue.png" alt="" class="svg">
+                      <img src="/img/arrow-green.png" alt="" class="svg">
+                    </div>
+                    <!-- /.column -->
+                    <div class="column right-column">
+                      <div class="title-money">Гроші:</div>
+                      <input type="text" name="money" placeholder="$0.00" value="">
+                      <div class="title-capital">Майно:</div>
+                      <div class="card"><img src="img/change-card-big.png" alt=""></div>
+                    </div>
+                    <!-- /.column -->
+                  </div>
+                  <!-- /.row -->
+                  <button class="btn_green btn-talks btn ">Запропонувати</button>
+                </div>
+                <!-- /.talks-2 -->
+
+                <div class="talks-3 ">
+                  <h1 class="title">Переговори</h1>
+                  <img class="svg" src="icons/check-box.svg" alt="">
+                  <div class="subitle">Гравець погодився</div>
+                  <button class="btn btn_green btn-big btn-ok">Ok</button>
+
+                </div>
+                <!-- /.talks-3 -->
+
+                <div class="talks-4 ">
+                  <h1 class="title">Переговори</h1>
+                  <img class="svg" src="icons/x-mark.svg" alt="">
+                  <div class="subitle">Гравець не погодився</div>
+                  <button class="btn btn_red btn-big btn-ok">Ok</button>
+
+                </div>
+                <!-- /.talks-4 -->
+
+
+
+                <div class="talks-5">
+                  <h1 class="title">Переговори</h1>
+                  <div class="row avatar_block">
+
+                    <img src="img/user_img_3.svg" alt="" class="message-avatar blue-border block">
+                    <img src="img/user_img_4.svg" alt="" class="message-avatar green-border block">
+
+                    <!-- /.avatar_block -->
+                    <div class="text-block block">
+                      <h1 class="title">Jenny Wilson</h1>
+                      <div class="money">$15 500</div>
+                      <div class="own">Власність: <span>15</span> одиниць</div>
+                    </div>
+                    <!-- /.text-block -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row">
+                    <div class="img-block">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                      <img src="img/change-card.png" alt="">
+                    </div>
+                    <!-- /.img-block -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="row-bottom">
+                    <div class="column left-column">
+                      <div class="title-money">Гроші:</div>
+                      <input type="text" name="money" placeholder="$0.00" value="$4 000">
+                      <div class="title-capital">Майно:</div>
+                      <div class="card"><img src="img/change-card-big.png" alt=""></div>
+                    </div>
+                    <!-- /.column -->
+                    <div class="column center-column">
+                      <img src="/img/arrow-green.png" alt="" class="svg">
+                      <img src="/img/arrow-blue.png" alt="" class="svg">
+
+                    </div>
+                    <!-- /.column -->
+                    <div class="column right-column">
+                      <div class="title-money">Гроші:</div>
+                      <input type="text" name="money" placeholder="$0.00" value="$20 000">
+                      <div class="title-capital">Майно:</div>
+                      <div class="card"><img src="img/card-empty.png" alt=""></div>
+                    </div>
+                    <!-- /.column -->
+                  </div>
+                  <!-- /.row -->
+                  <div class="button-pack">
+                    <button class="btn_green btn-small btn btn-agree">Погоджуюсь</button>
+                    <button class="btn_red btn-small btn btn-refuse">Відмовити</button>
+                  </div>
+                </div>
+                <!-- /.talks-5 -->
+
+                <!-- РЕйдування -->
+
+                <div class="raid">
+                  <h1 class="title">Рейдувати</h1>
+                  <div class="subitle">Оберіть на полі клітинку, яку хотіли би захопити</div>
+                  <!-- /.subitle -->
+                  <div class="avatar_block">
+                    <img src="img/cell_business.png" alt="" class="">
+                  </div>
+                  <!-- /.avatar_block -->
+                  <button class="btn_white btn btn-raid">Велика ймовірність, що гравець дізнається про ваші
+                    наміри</button>
+                </div>
+                <!-- /.raid -->
+
+                <div class="raid-2">
+                  <h1 class="title">Рейдувати</h1>
+                  <div class="row-top">
+                    <img src="img/VS..png" alt="" class="vs">
+                    <div class="column">
+                      <div class="title">Тітушки</div>
+                      <div class="subtitle">Можуть спробувати щось віджати</div>
+                      <img src="img/titushki.svg" alt="">
+                      <div class="number">x25</div>
+                      <h2>Твої</h2>
+
+                    </div>
+
+                    <!-- /.column -->
+                    <div class="column">
+                      <div class="title">Бики з району</div>
+                      <div class="subtitle">Захистять вас від нападу</div>
+                      <img src="img/bulls.svg" alt="">
+                      <div class="number">x25</div>
+                      <h2>Jenny Wilson</h2>
+                    </div>
+
+                    <!-- /.column -->
+
+                  </div>
+                  <!-- /.row -->
+
+                  <div class="row-bottom">
+                    <h1 class="title">Ймовірність успіху 50%</h1>
+                    <div class="text">У випадку неуспіху ви втрачаєте
+                      працівників та $1 000</div>
+                    <button class="btn btn_red btn-big btn-attack">Атакувати</button>
+                  </div>
+                  <!-- /.row -->
+                </div>
+                <!-- /.raid-2 -->
+
+                <div class="raid-3">
+                  <h1 class="title">Рейдувати</h1>
+                  <div class="subtitle">Ви успішно захопили бізнес гравця <span>Jenny Wilson</span></div>
+                  <div class="text">У вас лишилось:</div>
+                  <div class="column">
+                    <div class="title">Тітушки</div>
+                    <div class="subtitle">Можуть спробувати щось віджати</div>
+                    <img src="img/titushki.svg" alt="">
+                    <div class="number">x5</div>
+
+                  </div>
+                  <!-- /.column -->
+                  <button class="btn btn_green btn-big btn-ok">Ok</button>
+
+                </div>
+                <!-- /.raid-3 -->
+
+                <div class="raid-4">
+                  <h1 class="title">Рейдувати</h1>
+                  <div class="subtitle">Ви не змогли захопили бізнес гравця <span>Jenny Wilson</span></div>
+                  <div class="text">У вас лишилось:</div>
+                  <div class="row">
+                    <div class="column">
+                      <div class="title">Тітушки</div>
+                      <div class="subtitle">Можуть спробувати щось віджати</div>
+                      <img src="img/titushki.svg" alt="">
+                      <div class="number">x5</div>
+
+                    </div>
+                    <!-- /.column -->
+                    <div class="money">та $<span>14 000</span> </div>
+                  </div>
+
+                  <button class="btn btn_grey btn-big">Ok</button>
+
+                </div>
+                <!-- /.raid-4 -->
+              </div>
+              <!-- /.action-screen -->
+            </div>
+            <!-- /.column -->
+
+            <div class="column">
+              <div class="messenger">
+                <h1 class="title">Чат та події</h1>
+                <div class="messenger-overflow">
+                  <div class="message left">
+                    <img src="img/user_img_1.svg" alt="" class="message-avatar red-border">
+                    <div class="text-message left-posit">
+                      <h3 class="title">Theresa Webb:</h3>
+                      <div class="text">Придбала BMW</div>
+                      <div class="time">17:26:15</div>
+                    </div>
+                  </div>
+                  <!-- /.message -->
+                  <div class="message right">
+                    <img src="img/user_img_4.svg" alt="" class="message-avatar green-border right">
+                    <div class="text-message right-posit">
+                      <h3 class="title">Jenny Wilson:</h3>
+                      <div class="text">Пробач, подруга! Але не сьогодні</div>
+                      <div class="time">17:26:15</div>
+                    </div>
+                  </div>
+                  <!-- /.message -->
+
+                  <div class="message left">
+                    <img src="img/user_img_1.svg" alt="" class="message-avatar red-border">
+                    <div class="text-message left-posit">
+                      <h3 class="title">Theresa Webb:</h3>
+                      <div class="text">Ще подивимось, дорогуша!</div>
+                      <div class="time">17:26:15</div>
+                    </div>
+                  </div>
+                  <!-- /.messenger -->
+
+                  <div class="message center">
+                    <div class="text-message center-posit">
+                      <h3 class="title">Вікенд призів!</h3>
+                      <div class="text">Щановні гравці! Запрошуємо Вас цієї суботи, до участі у турнірі.</div>
+                      <div class="time">17:26:15</div>
+                    </div>
+                  </div>
+                  <!-- /.message -->
+                  <div class="message left">
+                    <img src="img/user_img_1.svg" alt="" class="message-avatar red-border">
+                    <div class="text-message left-posit">
+                      <h3 class="title">Theresa Webb:</h3>
+                      <div class="text">Придбала BMW</div>
+                      <div class="time">17:26:15</div>
+                    </div>
+                  </div>
+                  <!-- /.message -->
+                  <div class="message right">
+                    <img src="img/user_img_4.svg" alt="" class="message-avatar green-border right">
+                    <div class="text-message right-posit">
+                      <h3 class="title">Jenny Wilson:</h3>
+                      <div class="text">Пробач, подруга! Але не сьогодні</div>
+                      <div class="time">17:26:15</div>
+                    </div>
+                  </div>
+                  <!-- /.message -->
+
+                  <div class="message left">
+                    <img src="img/user_img_1.svg" alt="" class="message-avatar red-border">
+                    <div class="text-message left-posit">
+                      <h3 class="title">Theresa Webb:</h3>
+                      <div class="text">Ще подивимось, дорогуша!</div>
+                      <div class="time">17:26:15</div>
+                    </div>
+                  </div>
+                  <!-- /.messenger -->
+
+                  <div class="message center">
+                    <div class="text-message center-posit">
+                      <h3 class="title">Вікенд призів!</h3>
+                      <div class="text">Щановні гравці! Запрошуємо Вас цієї суботи, до участі у турнірі.</div>
+                      <div class="time">17:26:15</div>
+                    </div>
+                  </div>
+                  <!-- /.message -->
+                </div>
+
+
+              </div>
+            </div>
+            <!-- /.column -->
+
+            <div class="column">
+              <div class="cell-turist vertical-case">
+                <h2 class="header">$14 000</h2>
+                <h3 class="title">Готель “Турист”, Олександрія</h3>
+
+                <img class="svg" src="icons/building-23.svg" alt="">
+                <div class="footer"></div>
+              </div>
+              <!-- /.cell-turist -->
+
+              <div class="cell-question vertical-case">
+                <span>?</span>
+              </div>
+              <!-- /.cell-question -->
+
+              <div class="cell-storm vertical-case">
+                <h2 class="header">$18 000</h2>
+                <h3 class="title">Кирилівська база відпочинку “Хвиля”</h3>
+                <img class="svg" src="icons/weather-101.svg" alt="">
+                <div class="footer"></div>
+              </div>
+              <!-- /.cell-storm -->
+
+              <div class="cell-question vertical-case">
+                <span>?</span>
+              </div>
+              <!-- /.cell-question -->
+
+              <div class="cell-prize vertical-case">
+                <img src="img/cell-prize.svg" alt="">
+              </div>
+              <!-- /.cell-prize -->
+
+            </div>
+            <!-- /.column -->
+
+
+            <!-- /.row -->
+
+
+
+          </div>
+
+          <!-- /.row-center-->
+
+          <div class="row-bottom">
+            <div class="cell-police_2 square-case">
+              <span class="case-active blue first"></span>
+              <span class="case-active red second"></span>
+              <span class="case-active yellow third"></span>
+              <span class="case-active green fourth"></span>
+              <img class="svg" src="icons/police-1.svg" alt="">
+            </div>
+            <!-- /.cell-police_2 -->
+
+            <div class="cell-building horizontal-case">
+              <span class="case-active blue"></span>
+
+              <h2 class="header">$17 000</h2>
+              <h3 class="title">Харківська будівельна компанія</h3>
+              <img class="svg" src="icons/construction-1.svg" alt="">
+              <div class="footer"></div>
+            </div>
+            <!-- /.cell-building -->
+
+            <div class="cell-road_serv horizontal-case">
+              <h2 class="header">$25 000</h2>
+              <h3 class="title">Франківська дорожна служба</h3>
+              <img class="svg" src="icons/construction-9.svg" alt="">
+              <div class="footer"></div>
+            </div>
+            <!-- /.cell-road_serv -->
+
+            <div class="cell-question horizontal-case">
+              <span>?</span>
+            </div>
+            <!-- /.cell-question -->
+
+            <div class="cell-kbh horizontal-case">
+              <span class="case-active blue first"></span>
+              <span class="case-active red second"></span>
+              <span class="case-active yellow third"></span>
+              <span class="case-active green fourth"></span>
+              <h2 class="header">$54 000</h2>
+
+              <h3 class="title">Київський будівельний холдінг</h3>
+              <img class="svg" src="icons/construction.svg" alt="">
+              <div class="footer"></div>
+            </div>
+            <!-- /.cell-kbh -->
+
+            <div class="cell-fast_food horizontal-case">
+              <h2 class="header">$21 000</h2>
+              <h3 class="title">Фаст-фуд мережа “Черкаський”</h3>
+              <img class="svg" src="icons/fast-food-1.svg" alt="">
+              <div class="footer"></div>
+            </div>
+            <!-- /.cell-fast_food -->
+
+            <div class="cell-na_dnipri horizontal-case">
+              <h2 class="header">$14 000</h2>
+              <h3 class="title">Ресторанний комплекс “На Дніпрі”</h3>
+              <img class="svg" src="icons/eat-7.svg" alt="">
+              <div class="footer"></div>
+            </div>
+            <!-- /.cell-na_dnipri -->
+
+            <div class="cell-question horizontal-case">
+              <span>?</span>
+            </div>
+            <!-- /.cell-question -->
+
+            <div class="cell-cheb horizontal-case">
+              <h2 class="header">$18 000</h2>
+              <h3 class="title">Чебуречні “Прикарпат Торг”</h3>
+              <img class="svg" src="icons/fast-food-13.svg" alt="">
+              <div class="footer"></div>
+            </div>
+            <!-- /.cell-cheb -->
+
+            <div class="cell-bonus square-case">
+              <img class="svg" src="icons/coin-10.svg" alt="">
+            </div>
+            <!-- /.cell-police -->
+          </div>
+          <!-- /.row-bottom -->
+        </div>
+        <!-- /.cells -->
+      </div>
+      <!-- /.center__field -->
+
+      <div class="right__field">
+        <div class="notes-screen">
+          <h1 class="title">Позначки</h1>
+          <div class="list_note">
+            <div class="notes parcking">
+              <span class="color blue"></span>
+              <div class="text">Міський паркінг</div>
+            </div>
+            <!-- /.notes_parcking -->
+
+            <div class="notes fast-food">
+              <span class="color violet"></span>
+              <div class="text">Ресторани та фаст-фуди</div>
+            </div>
+            <!-- /.notes_fast-food -->
+
+            <div class="notes building-company">
+              <span class="color green"></span>
+              <div class="text">Будівельні компанії</div>
+            </div>
+            <!-- /.notes_building-company -->
+
+            <div class="notes sports">
+              <span class="color red"></span>
+              <div class="text">Спортивні організації</div>
+            </div>
+            <!-- /.notes_sports -->
+
+            <div class="notes factory">
+              <span class="color dark-blue"></span>
+              <div class="text">Промислові підприємства</div>
+            </div>
+            <!-- /.notes_factory -->
+
+            <div class="notes hotels">
+              <span class="color dark-green"></span>
+              <div class="text">Готелі та кемпінги</div>
+            </div>
+            <!-- /.notes_hotels -->
+          </div>
+        </div>
+        <button class="btn_exit btn btn_red btn-small">Вийти</button>
+        <!-- /.notes-screen -->
+      </div>
+
+      <!-- /.right__field -->
+    </div>
+  </div>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
